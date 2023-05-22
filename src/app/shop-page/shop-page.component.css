@@ -1,0 +1,51 @@
+
+
+h1{
+    text-align: center;
+    font-family: 'Crimson Text', serif;
+    font-size: 35pt;
+    margin: 20px;
+}
+
+h2{
+    font-family: 'Crimson Text', serif;
+    font-weight: bolder;
+    font-size: 20pt;
+
+}
+
+section{
+    position: relative;
+    left: 3%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+
+}
+
+div{
+    border: 3px solid #8b7868;
+    box-shadow:  inset 5px 5px 15px #8b7868;
+    background-color: rgb(234, 231, 229);
+}
+
+.course-section{
+
+    width: 300px;
+    text-align: center;
+    margin: 15px;
+    padding: 10px;
+
+}
+
+button{
+    text-decoration: none;
+    color: #554a41;
+    font-family: 'Crimson Text', serif;
+    font-size: larger;
+    background-color: white;
+    border-radius: 2px 2px 2px 2px;
+    box-shadow: 2px 2px ; 
+    
+}

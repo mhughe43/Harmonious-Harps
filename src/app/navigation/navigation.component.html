@@ -1,0 +1,5 @@
+<div class="sticky"><nav>
+      <h4 *ngFor="let link of links">
+        <a [routerLink]="link.path" routerLinkActive="active">{{ link.label }}</a>
+      </h4>
+  </nav></div>

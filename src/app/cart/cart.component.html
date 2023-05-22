@@ -1,0 +1,29 @@
+<div class="cart-container">
+    <h1>Your Order</h1>
+<div >
+    
+  <h2 *ngFor="let item of cartItems">
+    {{ item.name }} - ${{ item.price }}
+    <button (click)="removeFromCart(item)"><i class="fa fa-minus" style="color: rgb(212, 23, 23); font-size: x-large;">Delete</i></button>
+  </h2>
+
+
+<p>Total: ${{ calculateTotalPrice() }}</p>
+</div>
+
+</div>
+
+<div *ngIf="cartItems.length > 0">
+    <h2>Cart</h2>
+    <ul>
+      <li *ngFor="let item of cartItems; let i = index">
+        <h3>{{ item.title }}</h3>
+        <p>Code: {{ item.classCode }}</p>
+        <p>{{ item.description }}</p>
+        <p>Price: ${{ item.price }}</p>
+        <button (click)="removeFromCart(i)">Remove</button>
+      </li>
+    </ul>
+    <button (click)="clearCart()">Clear Cart</button>
+  </div>
+  <p *ngIf="cartItems.length === 0">Your cart is empty.</p>
