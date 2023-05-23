@@ -12,17 +12,20 @@ export class ShopPageComponent {
 
   showCart = false;
 
+
   openCart() {
     this.showCart = true;
   }
 
-  // addToCart(title: string, courseCode: string, price: number) {
-  //   const item = { title, courseCode, price };
-  //   this.cartService.addToCart(item);
-  // }
+
+  addToCart(title: string, classCode: string,price: number) {
+    const item = { title, classCode, price };
+    this.cartService.addItem(item);
+  }
+
   
 
-  courses: any[] = [
+  items: any[] = [
     {
       title: 'Note Reading',
       classCode: 'HRP101',
@@ -134,8 +137,6 @@ export class ShopPageComponent {
     }
   ];
 
-  addToCart(item: any) {
-    this.cartService.addItem(item);
-  }
+ 
 
 }

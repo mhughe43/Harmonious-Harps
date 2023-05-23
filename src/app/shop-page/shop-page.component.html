@@ -4,12 +4,12 @@
 <section>
     
    
-    <div *ngFor="let course of courses" class="course-section">
-        <h2>{{ course.title }}</h2>
-        <p style="font-weight: bolder;">Class Code: {{ course.classCode }}</p>
-        <p style="text-align: justify">{{ course.description }}</p>
-        <p>Price: ${{ course.price }}</p>
-        <button (click)="addToCart(courses)">Add to Cart</button>
+    <div *ngFor="let item of items" class="course-section">
+        <h2>{{ item.title }}</h2>
+        <p style="font-weight: bolder;">Class Code: {{ item.classCode }}</p>
+        <p style="text-align: justify">{{ item.description }}</p>
+        <p>Price: ${{ item.price }}</p>
+        <button (click)="addToCart(item.title, item.classCode, item.price)">Add to Cart</button>
     
       </div>
 

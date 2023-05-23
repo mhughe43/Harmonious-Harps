@@ -1,31 +1,28 @@
-import { Injectable } from '@angular/core';
+import { EventEmitter, Injectable } from '@angular/core';
 
 @Injectable({
   providedIn: 'root'
 })
 export class CartServiceService {
-  clearCart() {
-    throw new Error('Method not implemented.');
-  }
+  private items: any[] = [];
 
   cartItems: any[] = [];
-  cartService: any;
+
+cartUpdated: EventEmitter<void> = new EventEmitter<void>();
 
   addItem(item: any) {
     this.cartItems.push(item);
+  }
+
+  removeItem(index: number) {
+    this.cartItems.splice(index, 1);
   }
 
   getItems() {
     return this.cartItems;
   }
 
-  removeFromCart(item: any) {
-    const index = this.cartItems.indexOf(item);
-    if (index > -1) {
-      this.cartItems.splice(index, 1);
-    }
-  }
-  
+
   calculateTotalPrice() {
     let totalPrice = 0;
     for (const item of this.cartItems) {
@@ -34,5 +31,8 @@ export class CartServiceService {
     return totalPrice;
   }
 
- 
+  getItemCount(): number {
+    return this.items.length;
+  }
+
 }

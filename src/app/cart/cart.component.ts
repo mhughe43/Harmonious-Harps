@@ -8,21 +8,23 @@ import { CartServiceService } from '../cart-service.service';
 })
 export class CartComponent {
 
-  constructor(private cartService: CartServiceService) { }
-
   cartItems: any[] = [];
-
-  removeFromCart(item: any){
-    this.cartService.removeFromCart(item);
+  
+  
+constructor(private cartService: CartServiceService) {
+    this.cartItems = cartService.getItems();
   }
+  
+
+  removeItem(index: number) {
+    this.cartService.removeItem(index);
+  }
+
 
   calculateTotalPrice() {
     return this.cartService.calculateTotalPrice().toFixed(2);
   }
 
-  clearCart() {
-    this.cartService.clearCart();
-    this.cartItems = [];
-  }
+ 
 
 }
