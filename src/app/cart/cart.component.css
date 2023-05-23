@@ -1,17 +1,71 @@
 .cart-container{
+  position: absolute;
+  left: 60%;
+  bottom: -61.5%;
   border: 2px solid black;
+  width: 700px;
+  height: 300px;
+  overflow: auto;
+  background-color: rgb(234, 231, 229);
+}
+
+h2{
+  margin-left: 10px;
+}
+
+.flex{
+  display: flex;
+  flex-direction: row;
+  
+}
+
+.course-card{
+  text-align: center; 
+  width: 550px;
+  position: relative;
+  left: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.total{
+  position: absolute;
+  left: 42%;
+  top: 5%;
+}
+
+.butn-1{
+
+  width: 50px;
+  height: 50px;
+  border: none;
+  background-color: rgb(234, 231, 229);
 
 }
 
-.box {
-  width: 200px;
-  height: 200px;
-  background-color: #e0e0e0;
+.butn-2{
+position: relative;
+left: 35%;
+bottom: 5%;
+width: 200px;
+margin-bottom: 10px;
+text-decoration: none;
+  color: #554a41;
+  font-family: 'Crimson Text', serif;
+  font-size: larger;
+  background-color: white;
+  border-radius: 2px 2px 2px 2px;
+  box-shadow: 2px 2px ; 
 }
+  
 
-#box {
-  width: 200px;
-  height: 200px;
-  background-color: #e0e0e0;
+a{
+  text-align: center;
+  text-decoration: none;
+  color: #554a41;
+  font-family: 'Crimson Text', serif;
+ 
 }
 

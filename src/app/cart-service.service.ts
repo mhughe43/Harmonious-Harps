@@ -1,5 +1,6 @@
 import { EventEmitter, Injectable } from '@angular/core';
 
+
 @Injectable({
   providedIn: 'root'
 })
@@ -7,12 +8,12 @@ export class CartServiceService {
   private items: any[] = [];
 
   cartItems: any[] = [];
+  
 
-cartUpdated: EventEmitter<void> = new EventEmitter<void>();
-
-  addItem(item: any) {
+  addToCart(item: any) {
     this.cartItems.push(item);
   }
+
 
   removeItem(index: number) {
     this.cartItems.splice(index, 1);
@@ -34,5 +35,8 @@ cartUpdated: EventEmitter<void> = new EventEmitter<void>();
   getItemCount(): number {
     return this.items.length;
   }
+
+
+ 
 
 }

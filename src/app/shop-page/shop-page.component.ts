@@ -20,7 +20,7 @@ export class ShopPageComponent {
 
   addToCart(title: string, classCode: string,price: number) {
     const item = { title, classCode, price };
-    this.cartService.addItem(item);
+    this.cartService.addToCart(item);
   }
 
   

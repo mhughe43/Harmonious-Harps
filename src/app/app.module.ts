@@ -9,6 +9,7 @@ import { PrivatepolicyPageComponent } from './privatepolicy-page/privatepolicy-p
 import { ShopPageComponent } from './shop-page/shop-page.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { CartComponent } from './cart/cart.component';
+import { CheckoutComponent } from './checkout/checkout.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { CartComponent } from './cart/cart.component';
     PrivatepolicyPageComponent,
     ShopPageComponent,
     NavigationComponent,
-    CartComponent
+    CartComponent,
+    CheckoutComponent
   ],
   imports: [
     BrowserModule,

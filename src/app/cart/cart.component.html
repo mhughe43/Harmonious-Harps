@@ -1,22 +1,27 @@
 
 
-  <div *ngIf="cartItems.length > 0">
+<div class="cart-container">
   <h2>Cart</h2>
+  <div  *ngIf="cartItems.length > 0">
+  <p class="total">Total: ${{ calculateTotalPrice() }}</p>
   
-    <div *ngFor="let item of cartItems; let i = index">
+  <div >
+    <div  class="course-card" *ngFor="let item of cartItems; let i = index">
       <h3>{{ item.title }}</h3>
       <p>Code: {{ item.classCode }}</p>
       <p>{{ item.description }}</p>
       <p>Price: ${{ item.price }}</p>
-      <button (click)="removeItem(i)">Remove</button>
+      <button class="butn-1" (click)="removeItem(i)"><i class="fa-solid fa-trash" style="color: #ae9683; font-size: large;"></i></button>
     </div>
-  
+  </div>
 </div>
-<div class="cart-container">
-  <p>Total: ${{ calculateTotalPrice() }}</p>
-  <p *ngIf="cartItems.length === 0">Your cart is empty.</p>
+<div class="flex">
+  <p class="total" *ngIf="cartItems.length === 0">Your cart is empty.</p>
+  <a class="butn-2"  routerLink="/cart">Check Out</a>
 </div>
 
+
+</div>
 
 
 

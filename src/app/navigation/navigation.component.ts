@@ -11,6 +11,7 @@ export class NavigationComponent  {
     { label: 'Home', path: '/' },
     { label: 'Information', path: '/info' },
     { label: 'Shop', path: '/shop' },
+    { label: 'Cart', path: '/cart' },
     { label: 'Privacy Policy', path: '/privacy-policy' }
   ];
 
