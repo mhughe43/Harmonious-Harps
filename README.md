@@ -2,7 +2,7 @@
 
 We make online courses for learning the harp. We stand out because of our availability. Our target audience is adults. We want to convey a sense of fame, while at the same time being realistic.
 
-The client wanted me to create a front end website that will mainly sell the company's products. Besides the landing page, the website will need a information page, shop page and a privacy policy page. The landing page should have a Our Values section. There should be a call to action to get users to make a purchase. They would prefer a luxurious design, and would like you to use the brand color, which is white. Take into account the client's preferences and values.
+The client wanted me to create a front end website that will mainly sell the company's products. Besides the landing page, the website will need a information page, shop page and a privacy policy page. The landing page should have a Our Values section. They would prefer a luxurious design, and would like you to use the brand color, which is white. Take into account the client's preferences and values.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.4.
 
